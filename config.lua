@@ -37,20 +37,21 @@ Config.Locations = { -- Edit the various interaction points for players or creat
 	    [2] = vector3(-254.54, 6331.78, 32.43), -- paleto
     },
     ["duty"] = {
-        [1] = vector3(311.18, -599.25, 43.29),
-        [2] = vector3(-254.88, 6324.5, 32.58),
+        [1] = vector4(310.43, -597.08, 43.28, 153.79),--pilbox
     },
     ["vehicle"] = {
         [1] = vector4(294.578, -574.761, 43.179, 35.79),
         [2] = vector4(-234.28, 6329.16, 32.15, 222.5),
+	[3] = vector4(293.6, -1438.26, 29.8, 224.18),
     },
     ["helicopter"] = {
-        [1] = vector4(351.58, -587.45, 74.16, 160.5),
+        [1] = vector4(351.51, -588.02, 74.16, 268.73),
         [2] = vector4(-475.43, 5988.353, 31.716, 31.34),
     },
     ["armory"] = {
-        [1] = vector3(309.93, -602.94, 43.29),
+        [1] = vector4(306.7, -601.89, 43.28, 156.23),--pilbox
         [2] = vector3(-245.13, 6315.71, 32.82),
+	    [3] = vector3(376.78, -1411.13, 32.94),
     },
     ["roof"] = {
         [1] = vector4(338.5, -583.85, 74.16, 245.5),
@@ -59,24 +60,24 @@ Config.Locations = { -- Edit the various interaction points for players or creat
         [1] = vector3(298.74, -599.33, 43.29),
     },
     ["stash"] = {
-        [1] = vector3(309.78, -596.6, 43.29),
+        [1] = vector4(298.56, -598.27, 43.28, 66.58),--pilbox
+        [2] = vector4(301.9, -599.51, 43.28, 245.39),--pilbox
     },
     ["beds"] = {
-        [1] = {coords = vector4(353.1, -584.6, 43.11, 152.08), taken = false, model = 1631638868},
-        [2] = {coords = vector4(356.79, -585.86, 43.11, 152.08), taken = false, model = 1631638868},
-        [3] = {coords = vector4(354.12, -593.12, 43.1, 336.32), taken = false, model = 2117668672},
-        [4] = {coords = vector4(350.79, -591.8, 43.1, 336.32), taken = false, model = 2117668672},
-        [5] = {coords = vector4(346.99, -590.48, 43.1, 336.32), taken = false, model = 2117668672},
-        [6] = {coords = vector4(360.32, -587.19, 43.02, 152.08), taken = false, model = -1091386327},
-        [7] = {coords = vector4(349.82, -583.33, 43.02, 152.08), taken = false, model = -1091386327},
-        [8] = {coords = vector4(326.98, -576.17, 43.02, 152.08), taken = false, model = -1091386327},
+        [1] = {coords = vector4(319.33, -580.89, 44.2, 164.86), taken = false, model = 1631638868},
+        [2] = {coords = vector4(317.71, -585.57, 44.2, 350.38), taken = false, model = 1631638868},
+        [3] = {coords = vector4(314.54, -584.4, 44.2, 344.67), taken = false, model = 1631638868},
+        [4] = {coords = vector4(311.1, -583.16, 44.2, 332.39), taken = false, model = 1631638868},
+        [5] = {coords = vector4(313.93, -578.84, 44.2, 156.51), taken = false, model = 1631638868},
+
+
 	--- paleto
-	    [9] = {coords = vector4(-252.43, 6312.25, 32.34, 313.48), taken = false, model = 2117668672},
-        [10] = {coords = vector4(-247.04, 6317.95, 32.34, 134.64), taken = false, model = 2117668672},
-        [11] = {coords = vector4(-255.98, 6315.67, 32.34, 313.91), taken = false, model = 2117668672},
+	    [6] = {coords = vector4(-252.43, 6312.25, 32.34, 313.48), taken = false, model = 2117668672},
+        [7] = {coords = vector4(-247.04, 6317.95, 32.34, 134.64), taken = false, model = 2117668672},
+        [8] = {coords = vector4(-255.98, 6315.67, 32.34, 313.91), taken = false, model = 2117668672},
     },
     ["stations"] = {
-        [1] = {label = Lang:t('info.pb_hospital'), coords = vector4(304.27, -600.33, 43.28, 272.249)}
+        [1] = {label = Lang:t('info.pb_hospital'), coords = vector4(306.87, -588.12, 43.28, 244.34)}
     }
 }
 
@@ -103,6 +104,7 @@ Config.AuthorizedVehicles = { -- Vehicles players can use based on their ambulan
 		["ambulance"] = "Ambulance",
 	}
 }
+
 
 Config.Items = { -- Items found in the ambulance shop for players with the ambulance job to purchase
     label = Lang:t('info.safe'),
